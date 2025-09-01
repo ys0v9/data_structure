@@ -26,3 +26,16 @@ def insert(pos, e):
     else:
         print("리스트 overflow 또는 유효하지 않은 삽입 위치")
         exit()
+
+# 삭제 연산 delete(pos)
+def delete(pos):
+    global size # size는 전역변수
+    if not isEmpty() and 0 <= pos <= size: # 공백 상태가 아니고 pos가 유효한 위치이면
+        e = array[pos] # array[pos]의 복사본 e를 저장해 두고
+        for i in range(pos, size-1): # pos+1부터 size-1까지의 모든 항목을 한 칸씩 앞으로 옮김
+            array[i] = array[i+1]
+        size -= 1 # 요소의 수 size를 하나 감소
+        return e 
+    else:
+        print("리스트 underflow 또는 유효하지 않은 삭제 위치")
+        exit()
