@@ -39,3 +39,10 @@ def delete(pos):
     else:
         print("리스트 underflow 또는 유효하지 않은 삭제 위치")
         exit()
+
+# pos 위치의 항목을 참조 getEntry(pos)
+def getEntry(pos):
+    if 0 <= pos < size: # pos가 유효한 위치(0~size~1)이면 array[pos] 반환
+        return array[pos]
+    else:
+        return None
