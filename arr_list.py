@@ -46,3 +46,19 @@ def getEntry(pos):
         return array[pos]
     else:
         return None
+
+# 테스트 프로그램
+if __name__ == "_main_":
+    print("최초   ", array[0:size])
+    insert(0, 10)
+    insert(0, 20)
+    insert(1, 30)
+    insert(size, 40)
+    insert(2, 50)
+    print("삽입x5 ", array[0:size])
+    delete(2)
+    print("삭제(2)", array[0:size])
+    delete(size-1)
+    print("삭제(E)", array[0:size])
+    delete(0)
+    print("삭제(0)", array[0:size])
