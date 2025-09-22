@@ -43,7 +43,7 @@ def Infix2Postfix(expr):
 
 # Test
 if __name__ == "__main__":
-    print('중위 표기식 후위 표기 변환₩n')
+    print('중위 표기식 후위 표기 변환\n')
 
     infix1 = ['8','/','2','-','3','+','(','3','*','2',')']
     infix2 = ['1','/','2','*','4','*','(','1','/','4',')']
@@ -56,7 +56,7 @@ if __name__ == "__main__":
 
     print(' 중위표기:', infix1)
     print(' 후위표기', postfix1)
-    print(' 게산결과:', result1, end ='₩n₩n')
+    print(' 게산결과:', result1, end ='\n\n')
 
     print(' 중위표기:', infix2)
     print(' 후위표기', postfix2)
