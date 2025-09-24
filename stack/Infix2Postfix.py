@@ -47,12 +47,15 @@ if __name__ == "__main__":
 
     infix1 = ['8','/','2','-','3','+','(','3','*','2',')']
     infix2 = ['1','/','2','*','4','*','(','1','/','4',')']
+    infix3 = ['(','6','3',')','*','2','+','20','/','(','10','+','5',')']
 
     postfix1 = Infix2Postfix(infix1)
     postfix2 = Infix2Postfix(infix2)
+    postfix3 = Infix2Postfix(infix3)
 
     result1 = evalPostfix(postfix1)
     result2 = evalPostfix(postfix2)
+    result3 = evalPostfix(postfix3)
 
     print(' 중위표기:', infix1)
     print(' 후위표기', postfix1)
@@ -60,4 +63,8 @@ if __name__ == "__main__":
 
     print(' 중위표기:', infix2)
     print(' 후위표기', postfix2)
-    print(' 게산결과:', result2)
+    print(' 게산결과:', result2, end ='\n\n')
+
+    print(' 중위표기:', infix3)
+    print(' 후위표기', postfix3)
+    print(' 게산결과:', result3)
