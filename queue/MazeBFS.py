@@ -7,10 +7,10 @@ def isValidPos(x,y):
     return False
 
 map = [['1','1','1','1','1','1'],
-       ['e','0','0','0','0','1'],
+       ['e','0','1','0','0','1'],
+       ['1','0','0','0','1','1'],
        ['1','0','1','0','1','1'],
-       ['1','1','1','0','0','x'],
-       ['1','1','1','0','1','1'],
+       ['1','0','1','0','0','x'],
        ['1','1','1','1','1','1']]
 
 MAZE_SIZE = 6
@@ -31,6 +31,7 @@ def BFS():
             if isValidPos(x, y+1): que.enqueue((x, y+1))
             if isValidPos(x-1, y): que.enqueue((x-1, y))
             if isValidPos(x+1, y): que.enqueue((x+1, y))
+        print(' 현재 큐: ', que)
     return False
 
 
